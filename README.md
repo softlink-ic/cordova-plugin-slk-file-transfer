@@ -21,6 +21,19 @@ description: Upload and download files.
 #         under the License.
 -->
 
+# cordova-plugin-slk-file-transfer
+This plugin is based off https://github.com/apache/cordova-plugin-file-transfer, with the discussed fix for Issue 345 applied (https://github.com/apache/cordova-plugin-file-transfer/issues/345)
+
+This is required to support the migration to Cordova 12 and newer Android APIs.
+
+In order to upgrade this plugin:
+
+- First, check whether the pull request has been merged into the main plugin. If so, this plugin is no longer required, as long as you upgrade to a version that contains the pull request changes.
+- Pull the changes from the new version (download from the release tag, NOT master.)
+- Commit these changes into the cordova-plugin-slk-camera on the master branch
+- Create a new x.x.x-Issue-345-Fix branch based off of master (replacing x.x.x with the version, e.g. 2.0.0-with-PR-814)
+- Include the plugin in your Liberty Link cordova build
+
 # cordova-plugin-file-transfer
 
 [![Android Testsuite](https://github.com/apache/cordova-plugin-file-transfer/actions/workflows/android.yml/badge.svg)](https://github.com/apache/cordova-plugin-file-transfer/actions/workflows/android.yml) [![Chrome Testsuite](https://github.com/apache/cordova-plugin-file-transfer/actions/workflows/chrome.yml/badge.svg)](https://github.com/apache/cordova-plugin-file-transfer/actions/workflows/chrome.yml) [![iOS Testsuite](https://github.com/apache/cordova-plugin-file-transfer/actions/workflows/ios.yml/badge.svg)](https://github.com/apache/cordova-plugin-file-transfer/actions/workflows/ios.yml) [![Lint Test](https://github.com/apache/cordova-plugin-file-transfer/actions/workflows/lint.yml/badge.svg)](https://github.com/apache/cordova-plugin-file-transfer/actions/workflows/lint.yml)
